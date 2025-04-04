@@ -43,7 +43,7 @@ To make it easier to visualise, we usually shift the Fourier Transform so that t
 ### 4. How Are U and V Related to Image Size?
 The spatial frequency values (U, V) depend on the image dimensions:
 
-- <img src="https://latex.codecogs.com/gif.latex?U=\frac{k_{x}}{W}, ">   <img src="https://latex.codecogs.com/gif.latex?V=\frac{k_{y}}{H}">
+<img src="https://latex.codecogs.com/gif.latex?U=\frac{k_{x}}{W},"> <img src="https://latex.codecogs.com/gif.latex?V=\frac{k_{y}}{H}">
 
 where :
 * kx, ky are the indices in the Fourier-transformed image.
