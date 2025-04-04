@@ -1,7 +1,4 @@
-# M87 image construction
-
-
-
+# M87* image construction
 
 ## TOC
 - [How (U, V) coordinates relate to spatial frequencies of the image](#how-u-v-coordinates-relate-to-spatial-frequencies-of-the-image)
@@ -52,7 +49,6 @@ This means:
 * Smaller images have coarser frequency resolution since they contain fewer samples.
 
 
-
 ## Why the Fourier Transform is needed to reconstruct the image?
 
 The image of the M87* black hole wasn't taken like a normal photo. Instead, it was reconstructed from radio waves collected by the telescope around the world. The Fourier Transform (FT) was essential for this process because it allowed scientists to convert scattered data into a visual image.
@@ -83,6 +79,7 @@ After applying the Fourier Transform, scientists use **image processing algorith
 
 
 ## What challenges arise from missing data (sparse UV coverage)
+
 When using **Very Long Baseline Interferometry (VLBI)** to image the M87*, the telescopes only measure certain parts of the **Fourier Transform** of the image. This creates a **gaps in data**, known as **sparce (U, V) coverage**, leading to several challenges in reconstruction an accurate image.
 
 ### 1. What is (U, V) Coverage
@@ -114,8 +111,11 @@ When using **Very Long Baseline Interferometry (VLBI)** to image the M87*, the t
 * **Advanced Image Processing** -> Using algorithms to reconstruct the missing data.
 * **Machine Learning** -> AI-based techniques help refine blurry or incomplete images.
 
+
 ## Resources:
 
 **Basics of VLBI and Radio Interferometry** -> [link](https://eventhorizontelescope.org/science)
 
 **Spatial domain image to Frequency domain image (Fourier Transformation)** -> [link](https://matlabhelper.com/blog/matlab/how-to-convert-images-from-spatial-domain-to-frequency-domain/)
+
+**Fourier Transform Visualisation** -> [link](https://www.youtube.com/watch?v=spUNpyF58BY)
