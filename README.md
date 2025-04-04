@@ -1,7 +1,12 @@
 # M87 image construction
 
-### Basics of VLBI and Radio Interferometry
+**Basics of VLBI and Radio Interferometry**
+
 [link](https://eventhorizontelescope.org/science)
+
+**Spatial domain image to Frequency domain image (Fourier Transformation)**
+
+[link](https://matlabhelper.com/blog/matlab/how-to-convert-images-from-spatial-domain-to-frequency-domain/)
 
 Key concepts to understand:
 * How (U, V) coordinates relate to spatial frequencies of the image.
