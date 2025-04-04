@@ -7,6 +7,7 @@
 - [How (U, V) coordinates relate to spatial frequencies of the image](#how-u-v-coordinates-relate-to-spatial-frequencies-of-the-image)
 - [Why the Fourier Transform is needed to reconstruct the image](#why-the-fourier-transform-is-needed-to-reconstruct-the-image)
 - [What challenges arise from missing data (sparse UV coverage)](#what-challenges-arise-from-missing-data-sparse-uv-coverage)
+- [Resources](#resources)
 
 
 ## How (U, V) coordinates relate to spatial frequencies of the image.
@@ -82,8 +83,38 @@ After applying the Fourier Transform, scientists use **image processing algorith
 
 
 ## What challenges arise from missing data (sparse UV coverage)
+When using **Very Long Baseline Interferometry (VLBI)** to image the M87*, the telescopes only measure certain parts of the **Fourier Transform** of the image. This creates a **gaps in data**, known as **sparce (U, V) coverage**, leading to several challenges in reconstruction an accurate image.
 
+### 1. What is (U, V) Coverage
+* Each pair of telescopes in the VLBI network captures a **spatial frequency (U, V)** of the black hole image.
+* The more telescopes, teh better the coverage in the **Fourier domain** (frequency space).
+* But Earth's limited size means there are **gaps in coverage**--we don't get teh full Fourier Transform of the image.
 
+### 2. Challenges Due to Sparse (U, V) Coverage
+1. **Missing Information (Image Incompleteness)**
+    - Since we don't measure all frequencies, some **details of the black hole images are lost**.
+    - This can make the reconstructured image **blurrier or less accurate** than the real structure.
+2. **Image Artifacts (Fake Patterns)**
+    - Gaps in (U, V) coverage lead to **artificial structures** in teh final image.
+    - These can appear as **false rings, streaks, or distortions**, making interpretation difficult.
+3. **Lower Resolution (Smearing of Details)**
+    - The fewer frequencies we sample, the **worse the resolution**.
+    - The image might **lack sharpness**, making it harder to see features like the **black hole's body**.
+4. **Need for Complex Image Reconstruction Algorithms**
+    - Since we have missing data, we must use **mathematical models** to "fill in" the gaps. 
+    - Techniques like **maximum entropy methods, bayesian reconstruction, and machine learning** help recover a reasonable image.
+    - However, these methods introduce some **assumptions**, which may affect accuracy.
+5. **Dependence on Earth's Rotation**
+    - Since the Earth rotates, telescope position change over time, helping improve (U, V) coverage.
+    - However, bad weather or telescope failures can **reduce data quality**, worsening gaps in coverage.
+
+### 3. How Scientists Overcome Sparse (U, V) Coverage
+* **More Telescopes** -> Expanding the telescope network improves coverage.
+* **Earth Rotation Synthesis** -> Usign Earth's rotation to "fill in" missing frequencies over time.
+* **Advanced Image Processing** -> Using algorithms to reconstruct the missing data.
+* **Machine Learning** -> AI-based techniques help refine blurry or incomplete images.
+
+## Resources:
 
 **Basics of VLBI and Radio Interferometry** -> [link](https://eventhorizontelescope.org/science)
 
